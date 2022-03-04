@@ -1,0 +1,129 @@
+@media screen and (max-width: 600px) {
+    .nav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+body {
+    background-color:#EBFCFB;
+}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section {
+    padding: 5px;
+}
+
+ h1, h2 {
+    font-size: 30px; 
+    font-weight: bold; 
+    color:black;
+} 
+
+#experience li {
+    padding: 5px;
+    border: 1px solid; 
+    border-radius: 10px;
+    width: 10%;
+    border-spacing: 5px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    background-color: #F56476;
+    font-weight: bold;
+    color: white;
+}
+
+#skills li {
+    padding: 5px;
+    border: 1px solid; 
+    border-radius: 10px;
+    width: 10%;
+    border-spacing: 5px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    background-color: #F56476;
+    font-weight: bold;
+    color: white;
+}
+
+#message label {
+    font-size: 18px;
+    color: black; 
+    display: block;
+}
+
+#message input {
+    font-size: 18px;
+    padding: 2px;
+    margin: 5px;
+    border: 1px;
+    border-color: gray;
+    display: block;
+    align-items: center;
+}
+
+#message textarea {
+    font-size: 18px; 
+    margin: 5px;
+    border: 1px;
+    border-color: gray;
+
+}
+
+#message button {
+        background-color: #E43F6F; 
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: none;
+}
+
+#messages li {
+    padding: 5px;
+    border: 1px solid; 
+    border-radius: 10px;
+    width: 10%;
+    border-spacing: 5px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    background-color: #F56476;
+    font-weight: bold;
+    color: white;
+}
+
+#messages button {
+    background-color: #E43F6F; 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+
+footer {
+    background-color: #373F51;
+    color: white;
+    text-align: center;
+    line-height: 1em;
+    padding: 3px;
+    margin-top: 25px;
+}
+
+footer a, footer h2 {
+    color: white;
+}
