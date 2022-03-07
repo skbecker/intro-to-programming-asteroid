@@ -84,3 +84,31 @@ document.addEventListener('DOMContentLoaded', () => {
         messageForm[0].reset();
     });
 });
+
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul');
+
+// let githubRequest = new XMLHttpRequest();
+// githubRequest.onreadystatechange = function() {};
+// githubRequest.open('GET', 'https://api.github.com/users/skbecker/repos');
+// githubRequest.send(); 
+
+// githubRequest.addEventListener('load', (event) => {
+//     let repositories = JSON.parse(githubRequest.responseText);
+//     console.log(repositories);
+//     for (let i = 0; i < repositories.length; i++) {
+//         let project = document.createElement('li');
+//         project.innerHTML = repositories[i].name;
+//         projectList.appendChild(project);
+//     }
+// });
+
+fetch('https://api.github.com/users/skbecker/repos')
+.then(response => response.json())
+.then(data => {
+    for (let i = 0; i < data.length; i++) {
+    let project = document.createElement('li');
+    project.innerHTML = data[i].name;
+    projectList.appendChild(project)
+    }
+});
